@@ -7,13 +7,13 @@ class Location {
 
 	function __construct(){
 		global $objDB;
-		$objDB->tableName = 'area';
+		$objDB->tableName = 'web_area';
 	}
 
 	function getLocation(){
 		global $objDB;
-		$objDB->select(array('id','name'), '', 'Order by name');
+		$objDB->select(array('address','zipcode'), '', 'ORDER BY zipcode','',1);
 		$allEntities = $objDB->fetchAllMultiRecordsAsObject();
-		return $allEntities[0];
+		return $allEntities;
 	}
 }

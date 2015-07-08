@@ -4,8 +4,8 @@ Global file to include on every php file.
 */
 
 require_once('config.php');
-require_once(PATH.'/libs/mySqli.php');
-require_once(PATH.'/libs/Utils.php');
+require_once(PATH.'/lib/mySqli.php');
+require_once(PATH.'/lib/Utils.php');
 date_default_timezone_set('Asia/Calcutta');
 
 if(DEBUG) {						    // application in debug mode
@@ -29,8 +29,6 @@ $config = array(
 
 
 $objDB = new stdClass();
-$objPaging = new Paging();
-
 $objDB = getDBObj();
 
 /* Create generic object */

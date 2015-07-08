@@ -9,6 +9,6 @@ define("URL", "http://" . @$_SERVER['SERVER_NAME']. EXTRA_PATH);
 
 // Database details
 define("DB_HOST", "localhost");
-define("DB_USERNAME", "u438326510_suj");
-define("DB_PASSWORD", "sujit1234");
-define('DB_DATABASE', "u438326510");
+define("DB_USERNAME", "root");
+define("DB_PASSWORD", "root");
+define('DB_DATABASE', "ubz");
